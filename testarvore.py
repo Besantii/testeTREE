@@ -33,4 +33,3 @@ new_data = [[5.1, 3.5, 1.4, 0.2]]  # Substitua isso pelos seus próprios dados
 prediction = model.predict(new_data)
 st.write(f"Previsão: {iris.target_names[prediction[0]]}")
 
-streamlit run app.py
