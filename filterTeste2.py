@@ -1,3 +1,7 @@
+pip install scikit-learn
+pip install -r requirements.txt
+
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
