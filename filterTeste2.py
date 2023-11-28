@@ -1,12 +1,21 @@
 
-pip install -r requirements.txt
-
-
+import streamlit as st
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import make_pipeline
+
+
+
+# Instalar pacotes necessários
+st.sidebar.write("Instalando pacotes...")
+st.sidebar.code("pip install pandas scikit-learn streamlit")
+
+# Aguarde a instalação dos pacotes
+import time
+with st.spinner("Aguardando a instalação dos pacotes..."):
+    time.sleep(5)
 
 # Carregar os dados
 # Substitua 'seu_dataframe.csv' pelo caminho do seu arquivo CSV contendo os dados
